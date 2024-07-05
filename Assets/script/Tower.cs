@@ -12,15 +12,15 @@ public class Tower : MonoBehaviour
     {
         bank = FindObjectOfType<Bank>();
 
-        if (bank == null) { Debug.Log("1"); return false;  }
+        if (bank == null) {  return false;  }
 
-        if (bank.CurrentGold >= cost) { Debug.Log("2");
+        if (bank.CurrentGold >= cost) { 
         Instantiate(tower.gameObject, V3position, Quaternion.identity);
             bank.Withdraw(cost);
             return true;
         }
             
-        Debug.Log("3");
+        
         return false;
     }
 }

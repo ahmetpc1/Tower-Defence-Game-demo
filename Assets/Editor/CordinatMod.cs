@@ -16,6 +16,7 @@ public class CordinatMod : MonoBehaviour
         waypoint = GetComponentInParent<Waypoint>();
         coordinatTxt = GetComponent<TextMeshPro>();
         DisplayCoordinats();
+        coordinatTxt.enabled = false;
     }
 
     // Update is called once per frame

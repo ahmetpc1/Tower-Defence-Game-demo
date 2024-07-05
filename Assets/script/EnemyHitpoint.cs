@@ -21,7 +21,7 @@ public class EnemyHitpoint : MonoBehaviour
         {
             enemy.GoldRewardMethod();
             gameObject.SetActive(false);
-            
+            hitpoint++;
         }
     }
 }
